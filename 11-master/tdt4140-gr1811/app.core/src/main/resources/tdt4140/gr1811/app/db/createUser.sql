@@ -1,0 +1,1 @@
+INSERT INTO DataProvider (SSN, FirstName, LastName, BirthDate, Sex, Weight, Height, Email, PhoneNum, StartDate, Status) VALUES (?,?,?,?,?,?,?,?,?,?,"ACTIVE");

@@ -1,0 +1,1 @@
+INSERT INTO Pulse(DataproviderID, Timestamp, BPM)  VALUES (?, ?, ?);

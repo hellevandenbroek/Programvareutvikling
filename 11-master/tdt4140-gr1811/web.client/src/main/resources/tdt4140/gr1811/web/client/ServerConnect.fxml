@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="250.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tdt4140.gr1811.web.client.ServerConnectController">
+   <children>
+      <VBox prefHeight="20.0" prefWidth="250.0" spacing="2.0">
+         <children>
+            <Label text="Koble til ekstern server:">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="65.0" prefWidth="240.0" spacing="2.0">
+         <children>
+            <Label text="Server (IP-adresse):">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="server_field" />
+            <CheckBox fx:id="standard_port" mnemonicParsing="false" selected="true" text="Bruk standardport (64672)">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox fx:id="port_vbox" prefHeight="39.0" prefWidth="240.0" spacing="2.0">
+         <children>
+            <Label text="Port:" />
+            <TextField fx:id="port_field" promptText="64672" />
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="BOTTOM_RIGHT" spacing="5.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="connect_button" defaultButton="true" mnemonicParsing="false" text="Koble til" />
+            <Button fx:id="close_button" mnemonicParsing="false" text="Avbryt" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

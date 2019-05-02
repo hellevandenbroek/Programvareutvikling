@@ -1,0 +1,1 @@
+SELECT Email, PasswordHash FROM ServiceProvider WHERE Email = ?;

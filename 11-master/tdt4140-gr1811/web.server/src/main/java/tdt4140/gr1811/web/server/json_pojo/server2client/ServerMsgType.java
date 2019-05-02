@@ -1,0 +1,14 @@
+package tdt4140.gr1811.web.server.json_pojo.server2client;
+
+public enum ServerMsgType {
+	ECHO_ACK,
+	ERROR,
+	DATA_DELETION_ACK,
+	USER_DELETION_ACK,
+	USER_MODIFICATION_ACK,
+	ALL_INFO,
+	INSERT_ACK,
+	UNDO_DATA_DELETION_ACK,
+	CHANGE_STATUS_ACK,
+	USER_CREATION_ACK
+}

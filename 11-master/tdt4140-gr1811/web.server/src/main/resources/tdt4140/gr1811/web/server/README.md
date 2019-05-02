@@ -1,0 +1,1 @@
+# Resources used by the web server Java code

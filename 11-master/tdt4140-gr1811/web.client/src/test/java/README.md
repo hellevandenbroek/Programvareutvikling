@@ -1,0 +1,1 @@
+# Resources used by the test web client

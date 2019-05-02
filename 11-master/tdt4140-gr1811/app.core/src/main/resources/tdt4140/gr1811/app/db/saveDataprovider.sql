@@ -1,0 +1,1 @@
+UPDATE DataProvider SET SSN = ?, FirstName = ?, LastName = ?, BirthDate = ?,  Sex = ?,  Weight = ?,  Height = ?, Status = ?, Email = ?, PhoneNum = ? WHERE DataproviderID = ?; 

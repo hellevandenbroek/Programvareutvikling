@@ -1,0 +1,21 @@
+.root {
+	-fx-background-color: #fefefe;
+	-fx-accent: #33207e;
+	-fx-focus-color: #33207e;
+	-fx-focus-color: transparent;
+}
+
+.collapseBtn, .btn{
+    -fx-background-color: #33207e;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    }
+
+.collapseBtn:hover, .btn:hover {
+    -fx-background-color : #8382A9;
+    }
+    
+.nodeInfo {
+	-fx-border-color: black;
+	-fx-border-width: 2px;
+}

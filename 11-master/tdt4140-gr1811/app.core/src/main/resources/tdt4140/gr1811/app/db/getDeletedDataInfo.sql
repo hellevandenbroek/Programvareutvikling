@@ -1,0 +1,1 @@
+SELECT Timestamp, DataProviderID FROM DeletedData;

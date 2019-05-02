@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tdt4140.gr1811.app.ui.login.LoginController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logo3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox spacing="5.0">
+         <children>
+            <VBox spacing="2.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="usernameField" promptText="Brukernavn" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox spacing="2.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="71.0">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@password.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <PasswordField fx:id="passwordField" promptText="Passord" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Region prefHeight="18.0" prefWidth="101.0" HBox.hgrow="ALWAYS" />
+                  <CheckBox fx:id="rememberCheckbox" mnemonicParsing="false" text="Husk meg til neste gang" />
+                  <Region prefHeight="18.0" prefWidth="114.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="loginButton" mnemonicParsing="false" styleClass="btn" text="Logg inn" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <VBox alignment="CENTER" prefWidth="290.0" spacing="5.0">
+         <children>
+            <Label style="-fx-font-weight: bold;" text="Database-tilkobling" />
+            <Button fx:id="connect" mnemonicParsing="false" styleClass="btn" text="Koble til database" />
+            <VBox alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Server:">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin></Label>
+                        <Label fx:id="server_label" alignment="CENTER" contentDisplay="CENTER" text="N / A" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Database:">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin></Label>
+                        <Label fx:id="db_label" alignment="CENTER" contentDisplay="CENTER" text="N / A" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

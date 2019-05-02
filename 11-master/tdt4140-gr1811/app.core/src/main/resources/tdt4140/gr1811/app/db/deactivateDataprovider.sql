@@ -1,0 +1,1 @@
+UPDATE DataProvider SET Status = 'DEACTIVATED' WHERE DataproviderID = ?;

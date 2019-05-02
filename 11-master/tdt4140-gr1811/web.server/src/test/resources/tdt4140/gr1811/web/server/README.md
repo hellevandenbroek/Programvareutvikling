@@ -1,0 +1,1 @@
+# Resources for the tests of the web server Java code 
